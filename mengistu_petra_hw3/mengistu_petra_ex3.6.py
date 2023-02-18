@@ -15,10 +15,6 @@ def list(x,r): #create a function that generates the first 2,000 values of x fro
 		xpr=r*x*(1-x)#define the chaos function from the problem
 		x=xpr #set the new value of x to the one just calculated
 	return xlist[1000:2000] #output the values after the first thousand values of x
-# for j in range(0,1000): #create the list of r for the thousand values of r
-# 	r=3
-# 	rlist.append(r)
-
 
 for rpt in np.arange(1.,4.,0.01):#as r ranges between 1-4 in 0.01 step increments
 	for a in range(0,1000): #for each value of r, determine the x value by matching an r value to x
